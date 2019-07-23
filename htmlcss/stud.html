@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
- <link rel="stylesheet" href="./css/style.css">
-</head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+></head>
 <body>
+    
     <table>
         <tr>
             <td>Name</td>
-    <td><input type="text"/></td></tr>
+    <td><input type="text" class="form-control"/></td></tr>
 <tr>
     <td>branch</td>
 <td>
-    <select>
+    <select class="form-control">
         <option>computer</option>
         <option>mechanical</option>
         <option>electrical</option>
@@ -24,18 +26,18 @@
 </tr>
 <tr>
          <td>date of birth</td>
-        <td><input type="date"/></td>
+        <td><input type="date" class="form-control"/></td>
 </tr>
 <tr>
     <td>age</td>
-<td><input type="number" min="0" max="60"/></td></tr>
+<td><input type="number" min="0" max="60" class="form-control"/></td></tr>
 <tr><td><input type="radio" name="gender"/> male <input type="radio" name="gender"/> female</td>
 </tr>
 <tr><td><input type="checkbox"></td>
 <td> I agree to all terms and conditions</td></tr>
 <tr>
-    <td></td>
-<td><button>submit</button></td>
+        <td><button class="btn-success">submit</button></td>
+<td><button class="btn btn-danger">reset</button></td>
 </tr>
 </table>
 </body>
