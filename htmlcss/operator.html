@@ -11,6 +11,7 @@
     </script>
 </head>
 <body>
+    <table>
     <tr>
             <td>
                 no1
@@ -25,7 +26,7 @@
         <td>
             operations
         </td>
-        <td><select name="operators" id="oper" onchange="">
+        <td><select name="operators" id="oper" >
             <option value="add" id="n3">+</option>
             <option value="min" id="n4">-</option>
             <option value="div" id="n5">/</option>
@@ -34,12 +35,13 @@
     </tr> 
     <tr>
         <td></td>
-        <td><input type="button" value="submmit" onclick="get();" class="btn btn-success"></td>
+        <td><button type="button" onclick="getn();"></button></td>
     </tr>
     <tr>
         <td>
             <p id="n"></p>
         </td>
     </tr>
+</table>
 </body>
 </html>

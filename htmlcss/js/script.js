@@ -1,5 +1,8 @@
-function get()
+
+function getn()
 {
+   
+
     var n1=parseInt(document.getElementById("n1").value);
     var n2=parseInt(document.getElementById("n2").value);
     var oper=document.getElementById("oper").value;
@@ -22,7 +25,7 @@ function get()
    {
        r=divn(n1,n2)
    }
-  document.getElementById("r").innerHTML=n;
+  document.getElementById("n").innerHTML=r;
 }
 function addn(a,b)
 {

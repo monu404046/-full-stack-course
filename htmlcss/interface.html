@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border: solid 3px; color: rgb(0, 255, 76)" >
+            <tr>
+                <td><b>ENTER MOVIE NAME</b></td>
+                <td><input type="text" id="n"></td>
+            </tr>
+            <tr><td></td>
+                <td>
+                    <button type="button" class="btn btn-success" onclick="get();"> submit</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="p"></p>
+                </td>
+            </tr>
+          
+    </table>
+    <script>
+        var mov=Array( );
+
+            var i=0;
+            function get()
+            {
+                var n=document.getElementById("n").value;
+                mov[i]=n;
+                i++;
+              var mp="";
+              
+              for(var j=0;j<mov.length;j++)
+              {
+                  mp+=mov[j]+"<br>";
+
+              }
+                document.getElementById("p").innerHTML=mp;
+                
+
+            }
+            </script>
+    
+</body>
+</html>
