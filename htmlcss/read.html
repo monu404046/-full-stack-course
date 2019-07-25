@@ -8,10 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script>
-        function getname()
+        function getdata()
         {
             var n=document.getElementById("name").value;
+            var n=document.getElementById("no").value;
           document.getElementById("result").innerHTML=n;
+          
+
+         
         }
        
         
@@ -25,13 +29,19 @@
              <td><input type="text" id="name"></td>
 
           </tr>
+          <tr>
+                <td>enter no</td>
+                <td><input type="text" id="no"></td>
+        
+          </tr>
         <tr><td></td>
-        <td><button type="button" class="btn btn-success" onclick="getname();">submmit</button></td></tr>
+        <td><button type="button" class="btn btn-success" onclick="getdata();" onclick="getno();">submmit</button></td></tr>
         <tr>
              <td>
                  <p id="result"> 
 
                  </p>
+                 <p id="res"></p>
              </td>
         </tr>
     
