@@ -1,21 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>supperman</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+    
+    function getname(){
+        var n=document.getElementById("name").value;
+        document.getElementById("result").innerHTML=n;
+    }
+    
+    
+    </script>
 </head>
 <body>
- 
-<table><tr><td>name</td>
-<td><input type="text"></td></tr>
-<tr><td>roll no</td>
-<td><input type="text"></td></tr>
-<tr><td>admin no</td>
-<td><input type="text"></td></tr>
-<tr><td></td>
-<td><button>login</button></td></tr></table>
+ <form action="">
+<div class="container">
+    <div class="row">
+         <div class="col col-12 col-sm-4">
+
+         </div>
+         <div class="col col-12 col-sm-4">
+                <table><tr><td>name</td>
+                    <td><input type="text"></td></tr>
+                    <tr><td>roll no</td>
+                    <td><input type="text"></td></tr>
+                    <tr><td>admin no</td>
+                    <td><input type="text"></td></tr>
+                    <tr><td></td>
+                    <td><button type="button" class=" btn btn-success" onclick="getname();">login</button></td></tr></table>
+                     <tr>
+                          <td>
+                              <p id="result"> </p>
+                          </td>
+                     </tr>
+         </div>
+         <div class="col col-12 col-sm-4">
+
+         </div>
+    </div>
+</div>
+</form>
 </body>
 </html>
