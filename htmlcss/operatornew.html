@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> alert("hello")
+    function get()
+    {
+        var n1=parseInt(document.getElementById("n1").value);
+        var n2=parseInt(document.getElementById("n2").value);
+        var oper=document.getElementById("oper").value;
+
+        var c;
+        if(){
+
+        }
+    </script>
+</head>
+<body>
+    <tr>
+            <td>
+                no1
+            </td>
+            <td><input type="text" id="n1"></td>
+    </tr><br>
+    <tr>
+        <td>no2</td>
+        <td><input type="text" id=n2></td>
+    </tr><br>
+    <tr>
+        <td>
+            operations
+        </td>
+        <td><select name="operators" id="oper">
+            <option value="add" id="n3">+</option>
+            <option value="min" id="n4">-</option>
+            <option value="div" id="n5">/</option>
+            <option value="mul" id=n6>*</option>
+        </select></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td><input type="button" value="submmit" onclick="get()" class="btn btn-success"/></td>
+    </tr>
+    <tr>
+        <td>
+            <p id="n"></p>
+        </td>
+    </tr>
+</body>
+</html>

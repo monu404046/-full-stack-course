@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <script>
+    function get(){
+        var n1=document.getElementById("n1").value;
+
+ var n2=document.getElementById("n2").value;
+        var a=parseInt(n1);
+        var b=parseInt(n2);
+        if(a>b){
+            document.getElementById("n").innerHTML=n1+ "  is greater "
+        }
+        else
+        {
+            document.getElementById("n").innerHTML=n2+ " is greater "   
+        }
+    }
+   </script>
+</head>
+
+<body style="border: solid 2px">
+
+    <tr>
+        <td>no 1</td>
+       <td><input type="text" id="n1" class="form form-control"></td>
+    </tr><br>
+    <tr>
+         <td>
+             no 2
+         </td>
+       <td><input type="text" id="n2"></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button"  class="btn btn-success" value="submit" onclick="get()"/>
+        </td>
+    </tr>
+    <tr>
+            <p id="n"></p>
+    </tr>
+    
+
+</body>
+</html>
