@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    var count=0;
+    $(document).ready(function(){
+        $(".b1").click(function(){
+            count++;
+            $("label").text(count);
+            if(count>=10){
+                $(".b1").attr("disabled",true);
+            }
+        })
+    })
+    </script>
+</head>
+<body>
+    <button type="button" class="b1">clicked me</button>
+    
+    <p >you clicked <label for="">0</label></p>
+</body>
+</html>
