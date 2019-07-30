@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="table.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script>
   $(document).ready(function(){
       $(".login").click(function(){
-          $(".disp").toggle();
-          var y=$("#data").val();
-      });
-  });
+          $(div).show();
+          $(p).hide();
+          alert("");
+      })
+  })
+  $(document).ready(function(){
+      $(".login").click(function(){
+          $(p).show();
+          $(div).hide();
+          
+      })
+  })
+ 
   </script>
 </head>
 <body>
     <button type="button" class="login">login</button>
-    <div class="disp">
+    <div class="container">
+            <div class="row">
+    <div class="col col-12 col-sm-6 col-lg-6 col-md-6" id="first">
         
         <tr>
             <td>name</td>
@@ -26,7 +39,8 @@
         <tr><td>pass
         </td>
     <td><input type="text"></td></tr>
-    <tr><td><button type="button"></button>login</td></tr>
+    <tr><td><button type="button">login</button></td></tr>
     </div>
+   <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem explicabo cumque molestias tempora ullam distinctio soluta nihil praesentium quas! Expedita repellendus earum, autem aspernatur est itaque nam nesciunt voluptatibus sed.</p>
 </body>
 </html>
