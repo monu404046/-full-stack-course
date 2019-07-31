@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src=""></script>
+</head>
+<body>
+    <table>
+        <tr><td>enter no</td>
+        <td><input type="text" id="t1"></td></tr>
+        <button type="button" onclick="odevn();">submit</button>
+    </table>
+    
+<div id="disp"></div>
+<script>
+function odevn(){
+    var a=document.getElementById("t1").value;
+    even(a,(res)=>{
+        document.getElementById("disp").innerHTML=res;
+
+
+    })
+    function even(x,callback)
+    {
+        if(x%2==0){
+            callback("even");
+        }
+        else{
+            callback("odd");
+        }
+    }
+
+
+}
+
+</script>
+</body>
+</html>
